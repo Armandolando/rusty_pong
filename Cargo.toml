@@ -1,0 +1,8 @@
+[package]
+name = "rusty_pong"
+version = "0.1.0"
+authors = ["MarcoArazzi <marcoarazzi96@gmail.com>"]
+
+[dependencies]
+piston_window = "0.74.0"
+rand = "0.3"
