@@ -128,7 +128,7 @@ impl Bar{
 	
 	pub fn bounce(&self, x: i32, y: i32)->bool{
 		for block in &self.body{
-			if x==block.x && y==block.y{
+			if x==block.x && y==block.y + 1 || x==block.x && y==block.y - 1 {
 				return false;
 			}
 		}
