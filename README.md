@@ -1,2 +1,2 @@
 # rusty_pong
-Pong game develop in Rust
+Pong game developed in Rust
