@@ -8,7 +8,7 @@ use ball::{Ball, BallDir};
 const BORDER_COLOR: Color = [0.741, 0.765, 0.78, 1.0];
 const GAMEOVER_COLOR: Color = [0.91, 0.30, 0.24, 0.5];
 
-const MOVING_PERIOD: f64 = 0.1; 
+const MOVING_PERIOD: f64 = 0.07; 
 const RESTART_TIME: f64 = 1.0;
 
 pub struct Game{
@@ -115,7 +115,7 @@ impl Game{
     
     fn update_bar1(&mut self, dir: Option<Direction>) {
     	let (next_head, next_tail) = self.bar1.next_pos(dir);
-    	if next_head < self.height - 3 && next_tail > 2 {
+    	if next_head < self.height - 5 && next_tail > 4 {
         	self.bar1.move_bar(dir);
         }
         
@@ -123,7 +123,7 @@ impl Game{
     
     fn update_bar2(&mut self, dir: Option<Direction>) {
         let (next_head, next_tail) = self.bar2.next_pos(dir);
-        if next_head < self.height - 3 && next_tail > 2 {
+        if next_head < self.height - 5 && next_tail > 4 {
         	self.bar2.move_bar(dir);
         }
     }

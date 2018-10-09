@@ -43,6 +43,17 @@ impl Bar{
 			y: init_y + 2
 		});
 		
+		body.push_back(Block{
+			x: init_x,
+			y: init_y + 3
+		});
+		
+		body.push_back(Block{
+			x: init_x,
+			y: init_y + 4
+		});
+		
+		
 		Bar{
 			body
 		}
